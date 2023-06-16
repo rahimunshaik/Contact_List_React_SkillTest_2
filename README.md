@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+========================================================================
+To create the contact list app with the mentioned features, you can follow these steps:
+
+Set up a new React project by running the following command in your terminal:
+shell
+Copy code
+npx create-react-app contact-list-app
+Change into the project directory:
+shell
+Copy code
+cd contact-list-app
+Open the project in your preferred code editor.
+
+Install required dependencies:
+
+shell
+Copy code
+npm install axios react-router-dom
+The axios library will be used for making HTTP requests, and react-router-dom for handling routing.
+
+Create a new folder named src/components to store the components for your application.
+
+Inside the src/components folder, create a new file named ContactList.js. This file will display the list of contacts fetched from the API.
+
+Create another file named AddContact.js inside the src/components folder. This component will allow users to add a new contact.
+
+Create a file named App.js in the src folder, which will serve as the entry point for your app and handle routing.
+
+Finally, you can start the application by running the following command in the terminal:npm start
+
+ note that the API used in this example (https://jsonplaceholder.typicode.com/users) is a dummy API and does not actually store any data. Therefore, the POST, PUT, and DELETE requests will not have any effect on the server-side. However, the code is structured in a way that you can easily modify it to work with a real API.
